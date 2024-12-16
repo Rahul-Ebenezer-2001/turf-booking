@@ -1,0 +1,83 @@
+/* General styles for the admin dashboard container */
+.dashboard-container {
+  width: 100%;
+  font-family: 'Comic Sans MS', cursive;
+  background-color: #f5f5f5;
+}
+
+.navbar-dashboard {
+  width: 100%;
+  background-color: #222;
+  padding: 15px 10px;
+  top: 0;
+  left: 0;
+  display: flex;
+  height:60px;
+  position: sticky;
+  z-index:999;
+}
+
+.navbar-container {
+  width: 100%;
+  margin-top: -20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  z-index:1000;
+}
+
+.navbar-left {
+  flex: 1;
+  text-align: left;
+  padding: 10px;
+}
+
+.navbar-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  margin-right:20px;
+}
+
+.navbar-user {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.navbar-info {
+  font-size: 1rem;
+  color: white;
+}
+
+.navbar-logout {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+/* Button styles */
+.btn-secondary {
+  background-color: #555; /* Button background color */
+  color: #fff; /* Button text color */
+  font-size: 16px;
+  border: none;
+  padding: 5px 15px;
+  border-radius: 15px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+.btn-secondary:hover {
+  background-color: #28a745;
+}
+
+

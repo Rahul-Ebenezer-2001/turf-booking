@@ -1,0 +1,130 @@
+
+ .modal-content {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 50%;
+  }
+  
+  .modal-header {
+    border-bottom: 2px solid #dee2e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 1rem;
+  }
+  
+  .modal-title {
+    font-weight: bold;
+    color: #495057;
+    margin: 0;
+  }
+  
+  .login-close {
+    background: none;
+    border: none;
+    font-size: 1.5rem; 
+    font-weight: bold; 
+    line-height: 1;
+    cursor: pointer;
+  }
+  
+  .login-close::before {
+    content: 'x';
+    display: inline-block;
+  }
+  
+  
+  .modal-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-container {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .form-container form {
+    width: 90%;
+  }
+  
+  .form-label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  .input-group {
+    width: 100%;
+  }
+  
+  .input-group .form-control {
+    border-radius: 8px 0 0 8px; 
+    width: calc(100% - 70px); 
+  }
+  
+  .input-group .btn-outline-secondary {
+    border-radius: 0 8px 8px 0; 
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-size: 16px;
+    width: 70px; 
+  }
+  
+  .submit-btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 8px;
+    background-color: #007bff;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background-color: #0056b3; 
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex: 1; 
+  }
+  
+  .image-container img {
+    width: 250px;
+    height: auto;
+    object-fit: cover; 
+  }
+  
+  .modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: backdrop-filter 0.3s ease;
+    pointer-events: all;
+    z-index: 998;
+  }
+  
+  .fade.show {
+    display: block;
+  }
+  

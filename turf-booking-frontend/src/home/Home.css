@@ -1,0 +1,461 @@
+/* General styles */
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  /* Home styles */
+  .home {
+    position: relative;
+    transition: background-color 0.3s ease;
+    font-family: 'Comic Sans MS', cursive;
+    background-color: black;
+  }
+  
+  .home-modal-open {
+    backdrop-filter: blur(8px); /* Apply blur effect to the background */
+    transition: backdrop-filter 0.3s ease; /* Smooth transition for blur */
+    overflow: hidden; /* Prevent scrolling when modal is open */
+  }
+
+    /* Navbar styles */
+  .home-navbar-top {
+    width: 100%;
+    max-height: 60px;
+    background-color: #333; /* Dark background */
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between; /* Ensure the content is spaced between left and right */
+    align-items: center; /* Vertically center items */
+  }
+
+  /* Navbar content container */
+  .home-navbar-content {
+    display: flex;
+    justify-content: space-between; /* Align the left and right sections with space between */
+    width: 100%;
+    align-items: center; /* Vertically center items */
+  }
+
+  /* Left side content (Home) */
+  .home-navbar-left {
+    flex: 1; /* This ensures the left side takes the available space */
+    display: flex;
+    justify-content: flex-start; /* Align items to the left */
+  }
+
+  .home-navbar-text {
+    color: white; /* Text color for the home label */
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  /* Right side content (Logo and Buttons) */
+  .home-navbar-right {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Add space between items (logo and buttons) */
+  }
+
+  /* Logo styles */
+  .home-navbar-logo {
+    height: 40px; /* Adjust logo height */
+  }
+
+  /* Button styles */
+  .home-navbar-button {
+    background-color: #555; /* Button background color */
+    color: #fff; /* Button text color */
+    font-size: 16px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+  }
+
+  /* Button hover effect */
+  .home-navbar-button:hover {
+    background-color: #28a745; /* Green hover color */
+  }
+
+  
+  .hero {
+    text-align: center;
+    color: #fff;
+    padding: 20px 20px 10px 20px;
+    width: 100%;
+    height:200px;
+    margin-top: 60px;
+  }
+  
+  .hero-content {
+    display: flex; 
+    align-items: center; 
+    background-color:lightskyblue;
+    padding: 20px;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    height: 100%; 
+    transform: translateY(20px);
+    opacity: 0; 
+    animation: slideUp 1.5s ease-out forwards; 
+    animation-delay: 0.5s; 
+    overflow: hidden;
+  }
+  
+  
+  .hero-image {
+    max-width: 70%;
+    border-radius: 10px; 
+  }
+  
+  .hero-text {
+    margin: 0px 300px 0px 20px;
+    animation: fadeInOut 3s ease-in-out infinite;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    color: royalblue;
+    justify-content: flex-end; 
+    font-weight: bold; 
+  }
+
+  .hero-text h1{
+    font-weight: 700;
+    font-size: 36px;
+  }
+  
+
+  .book-button {
+    color: #fff;
+    font-size: 24px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: dodgerblue;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Hover Effect */
+  .book-button:hover {
+    background-color: black; 
+  }
+  
+  
+
+  /* Main content styles */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Modal backdrop */
+  .modal-back {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); 
+    transition: backdrop-filter 0.3s ease; 
+    pointer-events: none;
+  }
+  
+  .carousel-text {
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height:520px;
+    max-height: 520px;
+    padding: 10px 20px 10px 20px;
+    font-family: 'Comic Sans MS', cursive;
+  }
+
+  .carousel-text-container {
+    display: flex;
+    max-height: 500px;
+    align-items: center; 
+    max-width: 100%; 
+    padding: 20px;
+    justify-content: space-evenly;
+    background-color: lightgreen;
+    border-radius: 20px;
+    transform: translateY(20px); 
+    opacity: 0;
+    animation: slideUp 1.5s ease-out forwards; 
+    animation-delay: 0.5s; 
+    overflow: hidden;
+  }
+  
+  .text-content {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    letter-spacing: 1px;
+    margin: 20px;
+    width: 400px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+
+  }
+  
+  .text-content h2 {
+    flex-direction: column;
+    text-align: center; 
+    font-size: 36px;
+    font-weight: 700;
+    margin: 20px 0;
+    animation: fadeInOut 3s ease-in-out infinite;
+    color: #28a745;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  .text-content p {
+    flex-direction: column;
+    text-align: center; 
+    max-width: 400px;
+    font-size: 20px;
+    margin: 20px 0;
+    font-weight: 500;
+    transform: translateY(0);
+    justify-content: center;
+    color: #555;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+    top: 100%; 
+    left: 0; 
+    opacity: 0;
+    animation: appear 15s infinite ease-in-out;
+    font-family: 'Comic Sans MS', cursive;
+  }
+  
+  
+  
+  .text-content p:nth-child(1) {
+    animation-delay: 0s;
+  }
+  
+  .text-content p:nth-child(2) {
+    animation-delay: 5s;
+  }
+  
+  .text-content p:nth-child(3) {
+    animation-delay: 10s; 
+  }
+  
+  .carousel-container {
+    flex: 1; 
+    margin: 20px;
+    max-width: 600px; 
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+/* Wrapper to Align the Containers */
+.cta-location-wrapper {
+  display: flex; 
+  width: 98%;
+  border-radius: 20px; 
+  margin: 5px 20px 20px 20px; 
+}
+
+/* CTA Section Container */
+.cta-container {
+  width: 50%; 
+  padding: 20px; 
+  text-align: left; 
+  border-right: 1px solid #ddd; 
+  background-color:rgb(220, 164, 247);
+  border-radius: 20px; 
+  margin-right: 20px;
+  transform: translateY(20px);
+  opacity: 0; 
+  animation: slideUp 1.5s ease-out forwards; 
+  animation-delay: 0.5s; 
+}
+
+/* Location Section Container */
+.faq-container{
+  width: 50%; /* Take half the available space */
+  padding: 20px; /* Inner padding for spacing */
+  background-color:rgb(255, 219, 152);
+  border-radius: 20px; /* Smooth corners */
+  text-align: center;
+  transform: translateY(20px);
+  opacity: 0; 
+  animation: slideUp 1.5s ease-out forwards; 
+  animation-delay: 0.5s; 
+}
+
+/* CTA Section Styling */
+.cta-section h2 {
+  flex-direction: column;
+  text-align: center; 
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px 0;
+  animation: fadeInOut 3s ease-in-out infinite;
+  color:blueviolet;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-section .faq h4{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.cta-section p {
+  font-size: 20px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.cta-section {
+  text-align: center; /* For horizontal centering */
+}
+
+.cta-button {
+  background-color: rgb(185, 72, 185);
+  color: white;
+  font-size: 22px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: black;
+}
+
+/* Location Section Styling */
+.faq-section h2 {
+  flex-direction: column;
+  text-align: center; 
+  font-size: 36px;
+  font-weight: 700;
+  margin: 20px 0;
+  animation: fadeInOut 3s ease-in-out infinite;
+  color: rgb(192, 134, 26);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.faq-section iframe {
+  width: 100%; /* Adjust iframe width to container */
+  height: 200px; /* Set a fixed height */
+  border-radius: 10px; /* Add rounded corners */
+}
+
+/* Main carousel container */
+.images {
+  padding: 20px;
+  background-color:black;
+  border-radius: 10px;
+  margin: 10px 20px 20px 20px;
+}
+
+/* Carousel container that holds all images */
+.images-container {
+  width: 100%; /* Make it responsive */
+  overflow: hidden; /* Hide any images that overflow */
+  transform: translateY(20px);
+  opacity: 0; 
+  animation: slideUp 1.5s ease-out forwards; 
+  animation-delay: 0.5s; 
+}
+
+/* Wrapper around images to enable sliding */
+.images-wrapper {
+  display: flex;
+  animation: scroll 30s linear infinite; /* Infinite scrolling effect */
+}
+
+/* Styling for the images */
+.images-image-small {
+  height: 200px; /* Set image height to 200px */
+  width: auto; /* Adjust the width based on the image's aspect ratio */
+  object-fit: contain; /* Ensure image fits within the container without stretching or cropping */
+  margin-right: 10px; /* Space between images */
+  border-radius: 10px;
+}
+
+/* Infinite scrolling animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0); /* Start at the leftmost position */
+  }
+  100% {
+    transform: translateX(-100%); /* Move all images to the left */
+  }
+}
+
+/* Optional: Add responsiveness */
+@media (max-width: 768px) {
+  .images-image-small {
+    height: 150px; /* Reduce image height for smaller screens */
+  }
+}
+
+
+  /* Keyframes for fade-in animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Keyframes for slide-up animation */
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+    
+      /* Updated keyframes */
+  @keyframes fadeInOut {
+    0%, 5% {
+      opacity: 0.5; /* Fade-in starts */
+    }
+    5%, 95% {
+      opacity: 1; /* Fully visible for 60% of the animation cycle */
+    }
+    95%, 100% {
+      opacity: 0.5; /* Fade-out starts */
+    }
+  }
+  
+    /* Keyframes for sequential appearance and disappearance with no overlap */
+    @keyframes appear {
+      0%, 20% {
+        opacity: 0.1; /* Hidden before appearing */
+      }
+      20%, 70% {
+        opacity: 1; /* Fully visible */
+      }
+      70%, 100% {
+        opacity: 0.1; /* Hidden after displaying */
+      }
+    }
